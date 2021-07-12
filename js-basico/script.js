@@ -1,24 +1,4 @@
-/*
-    class Book {
-        constructor(title, author, pages) {
-            this.title = title;
-            this.author = author;
-            this.pages = pages;
-        }
-
-        read() {
-            return `Estou lendo ${this.title}`
-        }
-    }
-
-    let book = new Book("Algoritmos para viver", "Brian", 500);
-    let book2 = new Book("Um exu em NY", "Cidinha da Silva", 100);
-
-    console.log(book.read());
-    console.log(book2);
-*/
-
-
+//ORIENTAÇÃO A OBJETO
 class Book {
     constructor(title, author, pages) {
         this.title = title;
@@ -31,7 +11,26 @@ class Book {
     }
 }
 
+let book = new Book("Algoritmos para viver", "Brian", 500);
+let book2 = new Book("Um exu em NY", "Cidinha da Silva", 100);
+
+console.log(book.read());
+console.log(book2);
+
+
 //HERANÇA
+class Book {
+    constructor(title, author, pages) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+    }
+
+    read() {
+        return `Estou lendo ${this.title}`
+    }
+}
+
 class ITBook extends Book {
     constructor(title, author, pages, tech) {
         super(title, author, pages);
